@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Ogya</title>
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="bg-purple-700 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="font-bold text-xl" href="#">Ogya Rajendra</a>
+            <div class="space-x-4 hidden md:flex">
+                <a class="hover:text-orange-400" href="#about">About</a>
+                <a class="hover:text-orange-400" href="#experience">Experience</a>
+                <a class="hover:text-orange-400" href="#skills">Skills</a>
+                <a class="hover:text-orange-400" href="#portfolio">Portfolio</a>
+                <a class="hover:text-orange-400" href="#contact">Contact</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a class="block px-4 py-2 text-white hover:bg-purple-800" href="#about">About</a>
+            <a class="block px-4 py-2 text-white hover:bg-purple-800" href="#experience">Experience</a>
+            <a class="block px-4 py-2 text-white hover:bg-purple-800" href="#skills">Skills</a>
+            <a class="block px-4 py-2 text-white hover:bg-purple-800" href="#portfolio">Portfolio</a>
+            <a class="block px-4 py-2 text-white hover:bg-purple-800" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-96 bg-cover bg-center flex items-center justify-center" style="background-image: url('gweh.jpg');">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-10 bg-gray-800 text-gray-300">
+        <div class="container mx-auto text-center max-w-xl">
+            <h2 class="text-3xl font-bold mb-6 text-orange-400">About Me</h2>
+            <p>Saya adalah seorang developer web yang berfokus pada pengalaman pengguna dan desain UI yang responsif dan intuitif. 
+                Memiliki latar belakang dalam Informatika, saya senang mengembangkan website yang memberikan nilai 
+                tambah bagi pengguna. Saya juga berpengalaman dalam bidang Videografi maupun Fotografi yang membuat saya dapat mengoperasikan kamera dengan baik. </p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-10 bg-gray-900">
+        <div class="container mx-auto text-center max-w-xl">
+            <h2 class="text-3xl font-bold mb-6 text-orange-400">Experience</h2>
+            <ul class="text-left">
+                <li class="mb-4">
+                    <h3 class="text-xl font-semibold text-purple-500">Sekretaris Divisi Produksi - KINE CLUB UMS</h3>
+                    <p class="text-gray-300">2023 - Sekarang</p>
+                    <p>Membantu ketua divisi produksi dalam kegiatan perfilman di KINE CLUB UMS dan bertanggung jawab atas berbagai proyek video dan film.</p>
+                </li>
+                <li class="mb-4">
+                    <h3 class="text-xl font-semibold text-purple-500">UI Designer - Overlogic</h3>
+                    <p class="text-gray-300">2022 - Sekarang</p>
+                    <p>Menjadi UI Designer untuk agensi Overlogic</p>
+                </li>
+                <li class="mb-4">
+                    <h3 class="text-xl font-semibold text-purple-500">Documentation Member - SMAN 1 Boyolali</h3>
+                    <p class="text-gray-300">2019 - 2020</p>
+                    <p>Menjadi anggota dokumentasi untuk event yang diadakan SMAN 1 Boyolali</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-10 bg-gray-800 text-gray-300">
+        <div class="container mx-auto text-center max-w-xl">
+            <h2 class="text-3xl font-bold mb-6 text-orange-400">Skills</h2>
+            <div class="grid grid-cols-2 gap-4 text-left">
+                <div>
+                    <h3 class="font-semibold text-purple-500">Web Development</h3>
+                    <ul class="list-disc list-inside">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>PHP, MySQL</li>
+                        <li>Bootstrap, Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-purple-500">UI/UX Design</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                        <li>Miro</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-purple-500">Video Production</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Adobe Premiere Pro</li>
+                        <li>Capcut</li>
+                        <li>Camera Setup</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-purple-500">Soft Skills</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Team Leadership</li>
+                        <li>Problem Solving</li>
+                        <li>Effective Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-10 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6 text-orange-400">My Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-4 shadow-lg rounded-lg transform transition hover:scale-105">
+                    <img src="ruwet.png" alt="Project 1" class="w-full rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-purple-500">Ruwet News</h3>
+                    <p>Portal berita yang menyajikan berita terbaru dan memungkinkan pengguna untuk menulis berita mereka sendiri.</p>
+                </div>
+                <div class="bg-gray-800 p-4 shadow-lg rounded-lg transform transition hover:scale-105">
+                    <img src="overlogic.png" alt="Project 2" class="w-full rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-purple-500">Overlogic Login System</h3>
+                    <p>Pengembangan sistem login untuk website Overlogic.</p>
+                </div>
+                <div class="bg-gray-800 p-4 shadow-lg rounded-lg transform transition hover:scale-105">
+                    <img src="anugrah.png" alt="Project 3" class="w-full rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-purple-500">Anugrah Coating</h3>
+                    <p>Desain UI untuk website Anugrah Coating.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 bg-gray-800 text-gray-300">
+        <div class="container mx-auto text-center max-w-md">
+            <h2 class="text-3xl font-bold mb-6 text-orange-400">Contact Me</h2>
+            <form>
+                <div class="mb-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-2 bg-gray-700 text-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Your Email" class="w-full p-2 bg-gray-700 text-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Your Message" class="w-full p-2 bg-gray-700 text-gray-300 rounded"></textarea>
+                </div>
+                <button type="submit" class="bg-purple-600 text-white p-2 rounded hover:bg-purple-500">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-700 text-white text-center py-4">
+        <p>&copy; 2024 Ogya Rajendra. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
